@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 import json
+import csv
 from pathlib import Path
 
-import pandas as pd
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, JSONResponse
 
@@ -24,7 +24,9 @@ def _load_summary() -> dict:
 def _load_csv(path: Path) -> list[dict]:
     if not path.exists():
         return []
-    return pd.read_csv(path).to_dict(orient="records")
+    with path.open("r", newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        return list(reader)
 
 
 @app.get("/api/summary")

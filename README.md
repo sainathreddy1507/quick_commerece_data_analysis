@@ -57,7 +57,7 @@ SLA is defined as: `order_to_delivery_min <= 10`.
 1. Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-local.txt
 ```
 
 2. Generate synthetic data:
@@ -88,6 +88,7 @@ This project includes a Vercel-compatible backend entrypoint at `api/main.py`.
 - `/api/peak-hours` - peak-hour KPI table
 
 Note: the full interactive Streamlit UI remains available for local execution via `streamlit run app.py`.
+For Vercel, `requirements.txt` is intentionally minimal to keep serverless bundle size low.
 
 ## Presentation Guidance
 
