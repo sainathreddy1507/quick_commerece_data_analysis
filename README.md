@@ -78,6 +78,17 @@ python src/analyze.py
 streamlit run app.py
 ```
 
+## Vercel Deployment
+
+This project includes a Vercel-compatible backend entrypoint at `api/main.py`.
+
+- `/` - quick web summary page
+- `/api/summary` - full analysis JSON
+- `/api/location-performance` - location-level KPI table
+- `/api/peak-hours` - peak-hour KPI table
+
+Note: the full interactive Streamlit UI remains available for local execution via `streamlit run app.py`.
+
 ## Presentation Guidance
 
 For final presentation/demo:
