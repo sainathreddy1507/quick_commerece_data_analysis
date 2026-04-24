@@ -1,0 +1,101 @@
+{
+  "kpis": {
+    "total_orders": 120000,
+    "avg_order_to_delivery_min": 10.6,
+    "p90_delivery_min": 15.31,
+    "sla_10_min_rate_pct": 48.68,
+    "avg_delay_if_breached_min": 3.25
+  },
+  "model_metrics": {
+    "model_mae_min": 1.126,
+    "model_r2": 0.829
+  },
+  "top_delay_drivers": {
+    "distance_km": 0.4099,
+    "hour": 0.2524,
+    "prep_time_min": 0.1032,
+    "weather_clear": 0.0995,
+    "pickup_wait_min": 0.0765,
+    "zone_congestion_index": 0.0188,
+    "weather_storm": 0.016,
+    "weather_rain": 0.0092,
+    "items_count": 0.0069,
+    "is_weekend": 0.0022,
+    "zone_Koramangala": 0.0012,
+    "zone_Indiranagar": 0.0008
+  },
+  "breach_component_share": {
+    "prep_component_share_pct": 28.87,
+    "pickup_component_share_pct": 13.16,
+    "travel_component_share_pct": 57.97
+  },
+  "top_5_peak_hours": [
+    {
+      "hour": 8,
+      "orders": 5164,
+      "sla_pct": 48.28,
+      "avg_delivery_min": 10.46
+    },
+    {
+      "hour": 15,
+      "orders": 5163,
+      "sla_pct": 66.18,
+      "avg_delivery_min": 9.18
+    },
+    {
+      "hour": 3,
+      "orders": 5112,
+      "sla_pct": 65.65,
+      "avg_delivery_min": 9.21
+    },
+    {
+      "hour": 7,
+      "orders": 5093,
+      "sla_pct": 66.42,
+      "avg_delivery_min": 9.2
+    },
+    {
+      "hour": 2,
+      "orders": 5088,
+      "sla_pct": 66.14,
+      "avg_delivery_min": 9.14
+    }
+  ],
+  "high_demand_locations": [
+    {
+      "zone": "Koramangala",
+      "orders": 19167,
+      "sla_pct": 40.5,
+      "avg_delivery_min": 11.3,
+      "avg_delay_min": 2.13
+    },
+    {
+      "zone": "HSR Layout",
+      "orders": 16872,
+      "sla_pct": 49.63,
+      "avg_delivery_min": 10.52,
+      "avg_delay_min": 1.6
+    },
+    {
+      "zone": "Indiranagar",
+      "orders": 15694,
+      "sla_pct": 43.34,
+      "avg_delivery_min": 11.07,
+      "avg_delay_min": 1.96
+    },
+    {
+      "zone": "Marathahalli",
+      "orders": 14473,
+      "sla_pct": 43.79,
+      "avg_delivery_min": 11.01,
+      "avg_delay_min": 1.94
+    },
+    {
+      "zone": "BTM Layout",
+      "orders": 14388,
+      "sla_pct": 50.2,
+      "avg_delivery_min": 10.47,
+      "avg_delay_min": 1.58
+    }
+  ]
+}
